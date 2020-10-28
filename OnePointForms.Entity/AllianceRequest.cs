@@ -13,9 +13,12 @@ namespace OnePointForms.Entity
         public string DeliverTo { get; set; }
         public string DateNeeded { get; set; }
         public string DeliverToPhone { get; set; }
+        [MaxLength(50)]
         public string Supplier { get; set; }
+        [MaxLength(50)]
         public string SupplierContact { get; set; }
         public string SupplierPhoneNumber { get; set; }
+        [MaxLength(50)]
         public string ItemPart { get; set; }
         public string Description { get; set; }
         public string Unit { get; set; }
@@ -31,6 +34,7 @@ namespace OnePointForms.Entity
         public Nullable<int> LocationID { get; set; }
         public Nullable<int> UnitId { get; set; }
         public Nullable<int> NEID { get; set; }
+        [MaxLength(50)]
         public string FileName { get; set; }
         public string ContentType { get; set; }
         public byte[] Databytes { get; set; }
@@ -55,15 +59,25 @@ namespace OnePointForms.Entity
         public Nullable<int> NEID3 { get; set; }
         public Nullable<int> NEID4 { get; set; }
         public Nullable<int> NEID5 { get; set; }
+        [MaxLength(50)]
         public string ItemPart1 { get; set; }
+        [MaxLength(50)]
         public string ItemPart2 { get; set; }
+        [MaxLength(50)]
         public string ItemPart3 { get; set; }
+        [MaxLength(50)]
         public string ItemPart4 { get; set; }
+        [MaxLength(50)]
         public string ItemPart5 { get; set; }
+        [MaxLength(100)]
         public string Description1 { get; set; }
+        [MaxLength(100)]
         public string Description2 { get; set; }
+        [MaxLength(100)]
         public string Description3 { get; set; }
+        [MaxLength(100)]
         public string Description4 { get; set; }
+        [MaxLength(100)]
         public string Description5 { get; set; }
         public Nullable<double> Quantity1 { get; set; }
         public Nullable<double> Quantity2 { get; set; }
@@ -72,19 +86,30 @@ namespace OnePointForms.Entity
         public Nullable<double> Quantity5 { get; set; }
         public Nullable<System.DateTime> CreatedDate { get; set; }
         public Nullable<System.DateTime> ModifiedDate { get; set; }
+        [MaxLength(50)]
         public string CreatedBy { get; set; }
         public string ModifiedBy { get; set; }
         public string Choice { get; set; }
+        [MaxLength(30)]
         public string PONUMBER { get; set; }
+        [MaxLength(30)]
         public string RequisitionNumber { get; set; }
+        [MaxLength(50)]
         public string BuyersName { get; set; }
+        [MaxLength(30)]
         public string BuyersFileName { get; set; }
         public Nullable<bool> Deleted { get; set; }
-        public string Filenames0 { get; set; }
-        public string Filenames1 { get; set; }
-        public string Filenames2 { get; set; }
-        public string Filenames3 { get; set; }
-        public string Filenames4 { get; set; }
+        [MaxLength(30)]
+        public string Filename { get; set; }
+        [MaxLength(30)]
+        public string Filename1 { get; set; }
+        [MaxLength(30)]
+        public string Filename2 { get; set; }
+        [MaxLength(30)]
+        public string Filename3 { get; set; }
+        [MaxLength(30)]
+        public string Filename4 { get; set; }
+ 
         public byte[] FileName0Bytes { get; set; }
         public string FileName0ContentType { get; set; }
         public string BuyerNotes { get; set; }
@@ -116,6 +141,7 @@ namespace OnePointForms.Entity
         public byte[] Filenames3Bytes { get; set; }
         public byte[] Filenames2Bytes { get; set; }
         public byte[] Filenames1Bytes { get; set; }
+        [MaxLength(100)]
         public string RejectedComments { get; set; }
         public Nullable<int> AcceptedID { get; set; }
 
@@ -140,6 +166,7 @@ namespace OnePointForms.Entity
         public virtual NaturalExpense NaturalExpense3 { get; set; }
         public virtual NaturalExpense NaturalExpense4 { get; set; }
         public virtual NaturalExpense NaturalExpense5 { get; set; }
+        public virtual NaturalExpense NaturalExpense6 { get; set; }
         public virtual Status Status { get; set; }
         public virtual Unit Unit1 { get; set; }
         public virtual Unit Unit2 { get; set; }
@@ -147,6 +174,6 @@ namespace OnePointForms.Entity
         public virtual Unit Unit4 { get; set; }
         public virtual Unit Unit5 { get; set; }
         public virtual Unit Unit6 { get; set; }
-        public virtual NaturalExpense NaturalExpense6 { get; set; }
+        
     }
 }
