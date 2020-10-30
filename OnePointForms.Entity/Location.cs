@@ -8,7 +8,7 @@ namespace OnePointForms.Entity
     public class Location
     {
         [Key]
-        public int LocationId { get; set; }
+        public string LocationId { get; set; }
         public string Choice { get; set; }
     }
 }

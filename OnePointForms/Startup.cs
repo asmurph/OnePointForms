@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using OnePointForms.Service;
+using Microsoft.EntityFrameworkCore;
+using OnePointForms.Persistence;
 
 namespace OnePointForms
 {
@@ -22,7 +25,8 @@ namespace OnePointForms
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddDbContext<OnePointDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("CONN")));
+            services.AddScoped<IAllianceService, IAllianceService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

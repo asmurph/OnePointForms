@@ -8,7 +8,7 @@ namespace OnePointForms.Entity
     public class NaturalExpense
     {
         [Key]
-        public int NEID { get; set; }
+        public string NEID { get; set; }
         public string Choice { get; set; }
     }
 }

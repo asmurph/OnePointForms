@@ -8,7 +8,7 @@ namespace OnePointForms.Entity
      public class DeliverToLocation
     {
         [Key]
-        public int DeliverToLocationID { get; set; }
+        public string DeliverToLocationID { get; set; }
         public string Choice { get; set; }
 
     }

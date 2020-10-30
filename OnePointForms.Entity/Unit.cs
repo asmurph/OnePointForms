@@ -9,7 +9,7 @@ namespace OnePointForms.Entity
     {
         [Key]
 
-        public int UnitId { get; set; }
+        public string UnitId { get; set; }
         public string Choice { get; set; }
     }
 }
